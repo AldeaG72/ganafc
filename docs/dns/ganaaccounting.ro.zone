@@ -1,0 +1,13 @@
+$ORIGIN ganaaccounting.ro.
+$TTL 3600
+; Google Workspace - primire email pentru office@ganaaccounting.ro
+@                  3600 IN MX    1  smtp.google.com.
+@                  3600 IN TXT   "v=spf1 include:_spf.google.com ~all"
+google._domainkey  3600 IN TXT   ( "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2X0nqscAA/FXYtDbIzAx/2/VKSDKe4MpT1clfnDZdYr0sNLdrkRJSVfW4uCbH+u5BUWNoRzQnwu2ylvkhcqJ2RIkOxt28q/T745QW4eunRBw1RrZdR7LrnaDxs2hqA19c5tlIu8GGBDGqLp3J7IYRf8/r0hoTI3pd8pBYpM9Rh3eKckg5dur1qijLcH9" "aDwJx648m6YaPZjLAzzQ7c+iiNIm03zugpw6BdVeXtlvt9bnqyoEd/ezcrqBYigeE51VwjWVzgY+vwqwJSvWkoF78lMpFxEDW3AZiPVX/WNOV61fJxDLI0XpHuZJodOdfP3uMeE/ciNzxjCLgYwdx5f1bwIDAQAB" )
+; Resend - trimitere emailuri din formularul site-ului
+resend._domainkey  3600 IN TXT   "p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCqDVdSzAOMn/6DXXofxarfog0em+NJdibOecUNI45v8Op93un7RbOwUZ1p+MHubmEZ+HW7IYakC8sbqyvhPoCYNbIaJvV+otsmYttv6+KCGpsXg5KmQFj5+D/oALLoQ4GvFnZzSBt/6s8Ldn92VmApz0n6ayLiwSyIKLrPhJA0pwIDAQAB"
+send               3600 IN MX    10 feedback-smtp.eu-west-1.amazonses.com.
+send               3600 IN TXT   "v=spf1 include:amazonses.com ~all"
+rsend              3600 IN CNAME send.forge.rmta.net.
+; DMARC
+_dmarc             3600 IN TXT   "v=DMARC1; p=none;"
