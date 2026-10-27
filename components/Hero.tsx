@@ -1,12 +1,6 @@
 import Link from "next/link";
 import Icon from "./Icon";
 
-const stats = [
-  { value: "15+", label: "ani de experiență" },
-  { value: "200+", label: "clienți activi" },
-  { value: "100%", label: "termene respectate" },
-];
-
 export default function Hero() {
   return (
     <section id="acasa" className="relative overflow-hidden bg-navy-900 text-white">
@@ -44,19 +38,12 @@ export default function Hero() {
         </div>
 
         <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur sm:p-8">
-          <dl className="grid grid-cols-3 gap-4 border-b border-white/10 pb-6 text-center">
-            {stats.map((s) => (
-              <div key={s.label}>
-                <dt className="sr-only">{s.label}</dt>
-                <dd className="font-serif text-3xl font-semibold text-gold-400">{s.value}</dd>
-                <dd className="mt-1 text-xs text-white/60">{s.label}</dd>
-              </div>
-            ))}
-          </dl>
-          <ul className="mt-6 space-y-3 text-sm text-white/80">
+          <p className="font-serif text-xl font-semibold text-gold-400">Ce primești de la noi</p>
+          <ul className="mt-5 space-y-3 text-sm text-white/80">
             {[
-              "Expert contabil autorizat CECCAR",
-              "Consultant fiscal autorizat CCF",
+              "Ofertă personalizată, fără costuri ascunse",
+              "Un consultant dedicat pentru firma ta",
+              "Răspuns la solicitări în cel mult o zi lucrătoare",
               "Raportare digitală: SAF-T, e-Factura, D112",
             ].map((t) => (
               <li key={t} className="flex items-start gap-3">

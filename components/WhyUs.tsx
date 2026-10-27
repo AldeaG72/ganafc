@@ -2,7 +2,7 @@ import Icon from "./Icon";
 
 const reasons = [
   { icon: "shield", title: "Siguranță și conformitate", text: "Lucrăm riguros, cu verificări încrucișate, ca firma ta să fie mereu în regulă cu ANAF și ITM." },
-  { icon: "clock", title: "Termene respectate", text: "Calendar fiscal urmărit proactiv: primești din timp documentele și obligațiile de plată." },
+  { icon: "clock", title: "Calendar fiscal sub control", text: "Urmărim proactiv calendarul fiscal: primești din timp documentele și obligațiile de plată." },
   { icon: "chat", title: "Un consultant dedicat", text: "Ai un singur om de contact care îți cunoaște afacerea și îți răspunde rapid." },
   { icon: "digital", title: "Flux 100% digital", text: "Documente trimise online, rapoarte clare și acces la informații oricând ai nevoie." },
 ];

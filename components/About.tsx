@@ -18,24 +18,20 @@ export default function About() {
               <p className="text-sm text-white/60">— Echipa GANA F&amp;A</p>
             </div>
           </div>
-          <div className="absolute -bottom-5 -right-3 hidden rounded-xl bg-gold-500 px-6 py-4 text-navy-950 shadow-lg sm:block">
-            <p className="font-serif text-3xl font-bold">15+</p>
-            <p className="text-xs font-semibold uppercase tracking-wider">ani de experiență</p>
-          </div>
         </div>
 
         <div>
           <p className="eyebrow">Despre noi</p>
-          <h2 className="section-title">Experiență, rigoare și o abordare personală</h2>
+          <h2 className="section-title">Rigoare, transparență și o abordare personală</h2>
           <div className="mt-6 space-y-4 leading-relaxed text-navy-700/85">
             <p>
               GANA F&amp;A (Finance &amp; Accounting) este o firmă de contabilitate și consultanță fiscală care
               sprijină antreprenorii și companiile din România să își administreze corect și eficient finanțele.
             </p>
             <p>
-              Echipa noastră reunește experți contabili, consultanți fiscali și specialiști în resurse umane care
-              lucrează cu firme de toate dimensiunile — de la start-up-uri și PFA-uri până la companii cu zeci
-              de angajați.
+              Suntem o firmă nou înființată, construită pe ideea că fiecare client merită atenție reală, explicații
+              pe înțeles și servicii făcute cu grijă. Ne adresăm firmelor de toate dimensiunile — de la start-up-uri
+              și PFA-uri până la companii în creștere.
             </p>
           </div>
           <div className="mt-8 grid gap-4 sm:grid-cols-3">
