@@ -9,11 +9,11 @@ const serif = Playfair_Display({ subsets: ["latin", "latin-ext"], variable: "--f
 
 export const metadata: Metadata = {
   title: {
-    default: "GANA F&C — Contabilitate și consultanță fiscală",
-    template: "%s | GANA F&C",
+    default: "GANA F&A — Contabilitate și consultanță fiscală",
+    template: "%s | GANA F&A",
   },
   description:
-    "GANA F&C (Finance & Accounting) — servicii de contabilitate, consultanță fiscală, resurse umane și salarizare pentru firme din România.",
+    "GANA F&A (Finance & Accounting) — servicii de contabilitate, consultanță fiscală, resurse umane și salarizare pentru firme din România.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

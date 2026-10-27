@@ -29,7 +29,7 @@ export default function Header() {
       }`}
     >
       <div className="container-x flex h-16 items-center justify-between">
-        <Link href="/#acasa" aria-label="GANA F&C — Acasă" onClick={() => setOpen(false)}>
+        <Link href="/#acasa" aria-label="GANA F&A — Acasă" onClick={() => setOpen(false)}>
           <Logo light />
         </Link>
 

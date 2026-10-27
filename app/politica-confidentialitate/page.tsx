@@ -12,7 +12,7 @@ export default function Politica() {
         <h1 className="section-title">Politica de confidențialitate</h1>
         <div className="mt-8 space-y-6 leading-relaxed text-navy-700/90 [&_h2]:mt-8 [&_h2]:font-serif [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:text-navy-900">
           <p>
-            {site.legal.split(" · ")[0]} („GANA F&amp;C”, „noi”) prelucrează datele cu caracter personal în
+            {site.legal.split(" · ")[0]} („GANA F&amp;A”, „noi”) prelucrează datele cu caracter personal în
             conformitate cu Regulamentul (UE) 2016/679 (GDPR) și legislația națională aplicabilă.
           </p>
           <h2>Ce date colectăm</h2>

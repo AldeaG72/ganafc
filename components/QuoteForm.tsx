@@ -93,7 +93,7 @@ export default function QuoteForm({ defaultService }: { defaultService?: QuoteOp
         </span>
         <h2 className="mt-6 font-serif text-2xl font-semibold sm:text-3xl">Mulțumim! Solicitarea a fost trimisă.</h2>
         <p className="mx-auto mt-3 max-w-md text-navy-700/80">
-          V-am trimis un email de confirmare. Un consultant GANA F&amp;C vă va contacta în cel mult o zi lucrătoare.
+          V-am trimis un email de confirmare. Un consultant GANA F&amp;A vă va contacta în cel mult o zi lucrătoare.
         </p>
         <Link href="/" className="btn-gold mt-8">
           Înapoi la pagina principală

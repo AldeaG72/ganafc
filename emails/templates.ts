@@ -15,7 +15,7 @@ function layout(title: string, body: string) {
 <tr><td align="center">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;background:#ffffff;border-radius:12px;overflow:hidden;">
 <tr><td style="background:${NAVY};padding:24px 32px;">
-  <span style="font-family:Georgia,serif;font-size:22px;font-weight:bold;color:#ffffff;">GANA <span style="color:${GOLD};">F&amp;C</span></span><br>
+  <span style="font-family:Georgia,serif;font-size:22px;font-weight:bold;color:#ffffff;">GANA <span style="color:${GOLD};">F&amp;A</span></span><br>
   <span style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#ffffffa0;">Finance &amp; Accounting</span>
 </td></tr>
 <tr><td style="padding:32px;font-size:15px;line-height:1.6;">${body}</td></tr>
@@ -69,24 +69,24 @@ ${d.mesaj}`;
 }
 
 export function clientEmail(d: QuoteInput) {
-  const subject = "Am primit solicitarea dumneavoastră — GANA F&C";
+  const subject = "Am primit solicitarea dumneavoastră — GANA F&A";
   const html = layout(
     subject,
     `<h1 style="font-family:Georgia,serif;font-size:22px;margin:0 0 16px;">Bună ziua, ${esc(d.prenume)}!</h1>
-<p>Vă mulțumim că ați contactat <strong>GANA F&amp;C</strong>. Am primit solicitarea dumneavoastră de ofertă, iar un consultant vă va contacta în cel mult <strong>o zi lucrătoare</strong>.</p>
+<p>Vă mulțumim că ați contactat <strong>GANA F&amp;A</strong>. Am primit solicitarea dumneavoastră de ofertă, iar un consultant vă va contacta în cel mult <strong>o zi lucrătoare</strong>.</p>
 <p style="margin-top:24px;font-weight:bold;">Rezumatul solicitării:</p>
 ${detailsTable(d)}
 <p style="margin-top:24px;">Dacă doriți să adăugați informații, ne puteți suna la <a href="${site.phoneHref}" style="color:${NAVY};">${esc(site.phone)}</a> sau ne puteți scrie la <a href="mailto:${site.email}" style="color:${NAVY};">${esc(site.email)}</a>.</p>
-<p style="margin-top:24px;">Cu stimă,<br><strong>Echipa GANA F&amp;C</strong></p>`,
+<p style="margin-top:24px;">Cu stimă,<br><strong>Echipa GANA F&amp;A</strong></p>`,
   );
   const text = `Bună ziua, ${d.prenume}!
 
-Vă mulțumim că ați contactat GANA F&C. Am primit solicitarea dumneavoastră de ofertă (${d.serviciu}), iar un consultant vă va contacta în cel mult o zi lucrătoare.
+Vă mulțumim că ați contactat GANA F&A. Am primit solicitarea dumneavoastră de ofertă (${d.serviciu}), iar un consultant vă va contacta în cel mult o zi lucrătoare.
 
 Telefon: ${site.phone}
 Email: ${site.email}
 
 Cu stimă,
-Echipa GANA F&C`;
+Echipa GANA F&A`;
   return { subject, html, text };
 }

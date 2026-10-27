@@ -44,7 +44,7 @@ export default function Contact() {
 
         <div className="min-h-[320px] overflow-hidden rounded-2xl border border-white/10 bg-white/5">
           <iframe
-            title="Locația GANA F&C pe hartă"
+            title="Locația GANA F&A pe hartă"
             src={`https://www.google.com/maps?q=${encodeURIComponent(site.address)}&output=embed`}
             className="h-full min-h-[320px] w-full grayscale-[30%]"
             loading="lazy"

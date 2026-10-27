@@ -15,7 +15,7 @@ export default function About() {
               <p className="font-serif text-xl leading-relaxed sm:text-2xl">
                 Credem că o contabilitate bună nu înseamnă doar conformitate, ci claritate pentru decizii mai bune.
               </p>
-              <p className="text-sm text-white/60">— Echipa GANA F&amp;C</p>
+              <p className="text-sm text-white/60">— Echipa GANA F&amp;A</p>
             </div>
           </div>
           <div className="absolute -bottom-5 -right-3 hidden rounded-xl bg-gold-500 px-6 py-4 text-navy-950 shadow-lg sm:block">
@@ -29,7 +29,7 @@ export default function About() {
           <h2 className="section-title">Experiență, rigoare și o abordare personală</h2>
           <div className="mt-6 space-y-4 leading-relaxed text-navy-700/85">
             <p>
-              GANA F&amp;C (Finance &amp; Accounting) este o firmă de contabilitate și consultanță fiscală care
+              GANA F&amp;A (Finance &amp; Accounting) este o firmă de contabilitate și consultanță fiscală care
               sprijină antreprenorii și companiile din România să își administreze corect și eficient finanțele.
             </p>
             <p>

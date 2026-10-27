@@ -12,7 +12,7 @@ export default function WhyUs() {
     <section className="bg-white py-20 sm:py-28">
       <div className="container-x">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="eyebrow">De ce GANA F&amp;C</p>
+          <p className="eyebrow">De ce GANA F&amp;A</p>
           <h2 className="section-title">Mai mult decât un birou de contabilitate</h2>
         </div>
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
