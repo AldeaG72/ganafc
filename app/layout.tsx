@@ -8,6 +8,7 @@ const sans = Inter({ subsets: ["latin", "latin-ext"], variable: "--font-sans" })
 const serif = Playfair_Display({ subsets: ["latin", "latin-ext"], variable: "--font-serif" });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ganaaccounting.ro"),
   title: {
     default: "GANA F&A — Contabilitate și consultanță fiscală",
     template: "%s | GANA F&A",

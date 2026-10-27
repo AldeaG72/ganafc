@@ -23,7 +23,7 @@ npm run dev                  # http://localhost:3000
 Textele sunt **demo** — înlocuiți-le cu informațiile reale (cifre, certificări, CUI) înainte de lansare.
 
 ## Publicare pe Vercel
-Site-ul este live la https://ganafa.vercel.app. Proiectul Vercel `ganafc` este legat de acest repository:
+Site-ul este live la https://ganaaccounting.ro (DNS administrat de Vercel). Proiectul Vercel `ganafc` este legat de acest repository:
 orice push pe `main` se publică automat.
 
 Pași pentru o configurare de la zero:
@@ -37,9 +37,9 @@ Pași pentru o configurare de la zero:
 2. **Înainte de domeniu**: `EMAIL_FROM="GANA F&A <onboarding@resend.dev>"`. Atenție: în acest mod Resend
    livrează emailuri **doar către adresa cu care v-ați înregistrat**, deci confirmarea către clienți nu va
    funcționa încă — bun doar pentru test.
-3. **După cumpărarea domeniului** (ex. `ganafa.ro`): Resend → *Domains → Add domain*, adăugați la registrar
+3. **După cumpărarea domeniului** (`ganaaccounting.ro`, regiunea eu-west-1): Resend → *Domains → Add domain*, adăugați la registrar
    înregistrările DNS afișate (SPF, DKIM), așteptați statusul *Verified*, apoi schimbați în Vercel
-   `EMAIL_FROM="GANA F&A <oferte@ganafa.ro>"` și faceți redeploy.
+   `EMAIL_FROM="GANA F&A <oferte@ganaaccounting.ro>"` și faceți redeploy.
 4. În Vercel → *Settings → Domains* conectați domeniul la site.
 
 ## Anti-spam
