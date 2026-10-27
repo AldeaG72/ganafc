@@ -54,7 +54,7 @@ export const services: Service[] = [
       "Administrăm complet relația de muncă cu angajații, conform Codului Muncii și legislației în vigoare.",
     points: [
       "Contracte de muncă și acte adiționale",
-      "Gestionare REVISAL",
+      "Gestionare REGES",
       "Dosare de personal și regulamente interne",
       "Consultanță în legislația muncii",
     ],
