@@ -23,6 +23,10 @@ npm run dev                  # http://localhost:3000
 Textele sunt **demo** — înlocuiți-le cu informațiile reale (cifre, certificări, CUI) înainte de lansare.
 
 ## Publicare pe Vercel
+Site-ul este live la https://ganafc.vercel.app. Proiectul Vercel `ganafc` este legat de acest repository:
+orice push pe `main` se publică automat.
+
+Pași pentru o configurare de la zero:
 1. Urcați proiectul într-un repo GitHub.
 2. Pe [vercel.com](https://vercel.com) → *Add New → Project* → importați repo-ul (setările implicite Next.js).
 3. *Settings → Environment Variables*: adăugați `RESEND_API_KEY`, `EMAIL_FROM`, `EMAIL_TO`.
