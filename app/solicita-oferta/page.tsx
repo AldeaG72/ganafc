@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import QuoteForm from "@/components/QuoteForm";
 import Icon from "@/components/Icon";
 import { Reveal } from "@/components/Motion";
+import { EmailLink, PhoneActions } from "@/components/ContactLinks";
 import { quoteOptions, services, type QuoteOption } from "@/lib/services";
-import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Solicită ofertă",
@@ -65,12 +65,14 @@ export default async function SolicitaOferta({
             </div>
             <div className="rounded-2xl bg-navy-900 p-6 text-white">
               <h2 className="font-semibold">Preferi să vorbim direct?</h2>
-              <a href={site.phoneHref} className="mt-4 flex items-center gap-3 text-sm hover:text-gold-300">
-                <Icon name="phone" className="h-5 w-5 text-gold-400" /> {site.phone}
-              </a>
-              <a href={`mailto:${site.email}`} className="mt-3 flex items-center gap-3 text-sm hover:text-gold-300">
-                <Icon name="mail" className="h-5 w-5 text-gold-400" /> {site.email}
-              </a>
+              <div className="mt-4 flex items-start gap-3 text-sm">
+                <Icon name="phone" className="mt-0.5 h-5 w-5 shrink-0 text-gold-400" />
+                <PhoneActions />
+              </div>
+              <div className="mt-4 flex items-center gap-3 text-sm">
+                <Icon name="mail" className="h-5 w-5 shrink-0 text-gold-400" />
+                <EmailLink className="hover:text-gold-300" />
+              </div>
             </div>
           </Reveal>
         </div>

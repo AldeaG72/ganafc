@@ -1,6 +1,6 @@
 // Date de contact demo — înlocuiți cu datele reale ale firmei.
 const company = {
-  name: "GANA F&A SRL",
+  name: "GANA Finance and Accounting SRL",
   cui: "RO00000000",
   regCom: "J40/0000/2020",
   seat: "Str. Exemplu nr. 10, București",
@@ -10,8 +10,12 @@ export const site = {
   name: "GANA F&A",
   fullName: "GANA Finance and Accounting",
   tagline: "Contabilitate și consultanță fiscală",
-  phone: "+40 700 000 000",
-  phoneHref: "tel:+40700000000",
+  phone: "+40 785 347 207",
+  phoneHref: "tel:+40785347207",
+  // wa.me deschide aplicația WhatsApp pe telefon și WhatsApp Web / Desktop pe calculator
+  whatsappHref: `https://wa.me/40785347207?text=${encodeURIComponent(
+    "Bună ziua! Aș dori informații despre serviciile GANA F&A.",
+  )}`,
   email: "office@ganaaccounting.ro",
   address: company.seat,
   hours: "Luni – Vineri: 09:00 – 18:00",

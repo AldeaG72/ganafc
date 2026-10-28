@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Logo from "./Logo";
+import { EmailLink, PhoneActions } from "./ContactLinks";
 import { ceccar, legalBadges, site } from "@/lib/site";
 import { services } from "@/lib/services";
 
@@ -35,10 +36,10 @@ export default function Footer() {
           <h3 className="text-sm font-semibold uppercase tracking-wider text-white">Contact</h3>
           <ul className="mt-4 space-y-2 text-sm">
             <li>
-              <a href={site.phoneHref} className="hover:text-gold-300">{site.phone}</a>
+              <PhoneActions compact />
             </li>
             <li>
-              <a href={`mailto:${site.email}`} className="hover:text-gold-300">{site.email}</a>
+              <EmailLink className="hover:text-gold-300" />
             </li>
             <li>{site.address}</li>
             <li>{site.hours}</li>

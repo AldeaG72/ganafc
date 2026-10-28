@@ -1,11 +1,12 @@
 import Link from "next/link";
 import Icon from "./Icon";
 import { Reveal, Stagger, StaggerItem } from "./Motion";
+import { EmailLink, PhoneActions } from "./ContactLinks";
 import { site } from "@/lib/site";
 
 const items = [
-  { icon: "phone", label: "Telefon", value: site.phone, href: site.phoneHref },
-  { icon: "mail", label: "Email", value: site.email, href: `mailto:${site.email}` },
+  { icon: "phone", label: "Telefon", value: site.phone, kind: "phone" },
+  { icon: "mail", label: "Email", value: site.email, kind: "email" },
   { icon: "pin", label: "Adresă", value: site.address },
   { icon: "clock", label: "Program", value: site.hours },
 ];
@@ -29,8 +30,10 @@ export default function Contact() {
                 </span>
                 <div>
                   <p className="text-xs uppercase tracking-wider text-white/50">{i.label}</p>
-                  {i.href ? (
-                    <a href={i.href} className="font-medium hover:text-gold-300">{i.value}</a>
+                  {i.kind === "phone" ? (
+                    <PhoneActions />
+                  ) : i.kind === "email" ? (
+                    <EmailLink className="font-medium hover:text-gold-300" />
                   ) : (
                     <p className="font-medium">{i.value}</p>
                   )}

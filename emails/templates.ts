@@ -78,14 +78,14 @@ export function clientEmail(d: QuoteInput) {
 <p>Vă mulțumim că ați contactat <strong>GANA F&amp;A</strong>. Am primit solicitarea dumneavoastră de ofertă, iar un consultant vă va contacta în cel mult <strong>o zi lucrătoare</strong>.</p>
 <p style="margin-top:24px;font-weight:bold;">Rezumatul solicitării:</p>
 ${detailsTable(d)}
-<p style="margin-top:24px;">Dacă doriți să adăugați informații, ne puteți suna la <a href="${site.phoneHref}" style="color:${NAVY};">${esc(site.phone)}</a> sau ne puteți scrie la <a href="mailto:${site.email}" style="color:${NAVY};">${esc(site.email)}</a>.</p>
+<p style="margin-top:24px;">Dacă doriți să adăugați informații, ne puteți suna la <a href="${site.phoneHref}" style="color:${NAVY};">${esc(site.phone)}</a>, ne puteți scrie pe <a href="${site.whatsappHref}" style="color:${NAVY};">WhatsApp</a> sau la <a href="mailto:${site.email}" style="color:${NAVY};">${esc(site.email)}</a>.</p>
 <p style="margin-top:24px;">Cu stimă,<br><strong>Echipa GANA F&amp;A</strong></p>`,
   );
   const text = `Bună ziua, ${d.prenume}!
 
 Vă mulțumim că ați contactat GANA F&A. Am primit solicitarea dumneavoastră de ofertă (${d.serviciu}), iar un consultant vă va contacta în cel mult o zi lucrătoare.
 
-Telefon: ${site.phone}
+Telefon / WhatsApp: ${site.phone}
 Email: ${site.email}
 
 Cu stimă,
