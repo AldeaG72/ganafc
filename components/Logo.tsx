@@ -1,17 +1,11 @@
-export default function Logo({ light = false }: { light?: boolean }) {
+import { logoGold, logoInk, logoSub, logoViewBox } from "./logo-paths";
+
+export default function Logo({ light = false, className = "h-9 w-auto sm:h-10" }: { light?: boolean; className?: string }) {
   return (
-    <span className="flex items-center gap-2.5">
-      <span className="grid h-9 w-9 place-items-center rounded-md bg-gold-500 font-serif text-lg font-bold text-navy-950">
-        G
-      </span>
-      <span className="leading-tight">
-        <span className={`block font-serif text-lg font-semibold ${light ? "text-white" : "text-navy-900"}`}>
-          GANA <span className="text-gold-500">F&amp;A</span>
-        </span>
-        <span className={`block text-[10px] uppercase tracking-[0.18em] ${light ? "text-white/60" : "text-navy-700/70"}`}>
-          Finance &amp; Accounting
-        </span>
-      </span>
-    </span>
+    <svg viewBox={logoViewBox} className={className} role="img" aria-label="GANA F&A – Finance & Accounting">
+      <path d={logoInk} fill={light ? "#FFFFFF" : "#0B1F3A"} />
+      <path d={logoGold} fill={light ? "#D4B26A" : "#C9A24D"} />
+      <path d={logoSub} fill={light ? "#FFFFFF" : "#0B1F3A"} fillOpacity={light ? 0.85 : 1} />
+    </svg>
   );
 }

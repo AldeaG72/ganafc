@@ -15,7 +15,7 @@ export default function Footer() {
     <footer className="bg-navy-950 text-white/70">
       <div className="container-x grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
         <div>
-          <Logo light />
+          <Logo light className="h-auto w-full max-w-[240px]" />
           <p className="mt-4 max-w-sm text-sm leading-relaxed">
             Partenerul tău de încredere pentru contabilitate, fiscalitate, resurse umane și salarizare.
           </p>
