@@ -32,3 +32,35 @@ body {
     @apply mt-3 font-serif text-3xl font-semibold text-navy-900 sm:text-4xl;
   }
 }
+
+/* Animații */
+@keyframes grid-pan {
+  from { background-position: 0 0, 0 0; }
+  to { background-position: 56px 56px, 56px 56px; }
+}
+.hero-grid {
+  animation: grid-pan 8s linear infinite;
+}
+
+@keyframes shine {
+  from { transform: translateX(-120%) skewX(-20deg); }
+  to { transform: translateX(220%) skewX(-20deg); }
+}
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+.btn-shine::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 40%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.55), transparent);
+  transform: translateX(-120%) skewX(-20deg);
+  animation: shine 3.5s ease-in-out 2s infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .hero-grid, .btn-shine::after { animation: none; }
+}

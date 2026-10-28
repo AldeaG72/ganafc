@@ -1,3 +1,5 @@
+import { Reveal, Stagger, StaggerItem } from "./Motion";
+
 const values = [
   { title: "Integritate", text: "Transparență totală în tot ce facem." },
   { title: "Precizie", text: "Fiecare cifră contează și este verificată." },
@@ -8,7 +10,7 @@ export default function About() {
   return (
     <section id="despre" className="py-20 sm:py-28">
       <div className="container-x grid gap-12 lg:grid-cols-2 lg:items-center">
-        <div className="relative">
+        <Reveal className="relative" direction="right" distance={60}>
           <div className="aspect-[4/3] rounded-2xl bg-gradient-to-br from-navy-800 to-navy-950 p-8 text-white shadow-xl">
             <div className="flex h-full flex-col justify-between">
               <span className="font-serif text-6xl text-gold-400">“</span>
@@ -18,9 +20,9 @@ export default function About() {
               <p className="text-sm text-white/60">— Echipa GANA F&amp;A</p>
             </div>
           </div>
-        </div>
+        </Reveal>
 
-        <div>
+        <Reveal direction="left" distance={60} delay={0.15}>
           <p className="eyebrow">Despre noi</p>
           <h2 className="section-title">Rigoare, transparență și o abordare personală</h2>
           <div className="mt-6 space-y-4 leading-relaxed text-navy-700/85">
@@ -34,15 +36,15 @@ export default function About() {
               și PFA-uri până la companii în creștere.
             </p>
           </div>
-          <div className="mt-8 grid gap-4 sm:grid-cols-3">
+          <Stagger className="mt-8 grid gap-4 sm:grid-cols-3">
             {values.map((v) => (
-              <div key={v.title} className="rounded-xl border border-navy-900/10 bg-white p-4">
+              <StaggerItem key={v.title} className="rounded-xl border border-navy-900/10 bg-white p-4 transition duration-300 hover:-translate-y-1 hover:border-gold-500/50 hover:shadow-md">
                 <p className="font-semibold text-navy-900">{v.title}</p>
                 <p className="mt-1 text-sm text-navy-700/75">{v.text}</p>
-              </div>
+              </StaggerItem>
             ))}
-          </div>
-        </div>
+          </Stagger>
+        </Reveal>
       </div>
     </section>
   );
