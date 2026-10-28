@@ -31,7 +31,8 @@ function detailsTable(d: QuoteInput) {
     ["Prenume", d.prenume],
     ["Telefon", d.telefon],
     ["Email", d.email],
-    ["Companie", d.companie || "—"],
+    ["Nume firmă", d.companie || "—"],
+    ["CUI firmă", d.cui || "—"],
     ["Serviciu dorit", d.serviciu],
   ];
   return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;margin:16px 0;">
@@ -60,7 +61,8 @@ Nume: ${d.nume}
 Prenume: ${d.prenume}
 Telefon: ${d.telefon}
 Email: ${d.email}
-Companie: ${d.companie || "-"}
+Nume firmă: ${d.companie || "-"}
+CUI firmă: ${d.cui || "-"}
 Serviciu: ${d.serviciu}
 
 Mesaj:

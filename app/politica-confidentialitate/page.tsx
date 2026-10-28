@@ -34,7 +34,7 @@ export default function Politica() {
       <ul>
         <li>
           <strong>Datele din formularul „Solicită ofertă”:</strong> nume, prenume, număr de telefon, adresă de
-          email, denumirea companiei, serviciul dorit și mesajul transmis.
+          email, numele și CUI-ul firmei, serviciul dorit și mesajul transmis.
         </li>
         <li>
           <strong>Corespondența:</strong> datele din emailurile sau apelurile prin care ne contactați direct.

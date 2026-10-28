@@ -17,6 +17,15 @@ export const quoteSchema = z.object({
     .regex(/^\+?[0-9\s().-]{9,20}$/, "Introduceți un număr de telefon valid."),
   email: z.string().trim().email("Introduceți o adresă de email validă.").max(120),
   companie: z.string().trim().max(120).optional().default(""),
+  // CUI opțional: 2–10 cifre, cu sau fără prefixul RO
+  cui: z
+    .string()
+    .trim()
+    .toUpperCase()
+    .regex(/^$|^(RO)?\s?\d{2,10}$/, "Introduceți un CUI valid (ex.: RO12345678 sau 12345678).")
+    .transform((v) => v.replace(/\s+/g, ""))
+    .optional()
+    .default(""),
   serviciu: z.enum(quoteOptions, {
     errorMap: () => ({ message: "Alegeți serviciul dorit." }),
   }),

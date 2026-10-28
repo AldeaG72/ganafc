@@ -122,9 +122,13 @@ export default function QuoteForm({ defaultService }: { defaultService?: QuoteOp
         <Field id="email" label="Email" required error={errors.email}>
           <input id="email" name="email" type="email" autoComplete="email" placeholder="nume@firma.ro" className={inputCls} {...err("email")} />
         </Field>
-        <Field id="companie" label="Companie" error={errors.companie}>
-          <input id="companie" name="companie" autoComplete="organization" className={inputCls} {...err("companie")} />
+        <Field id="companie" label="Nume firmă" error={errors.companie}>
+          <input id="companie" name="companie" autoComplete="organization" placeholder="Ex.: Firma Mea SRL" className={inputCls} {...err("companie")} />
         </Field>
+        <Field id="cui" label="CUI firmă" error={errors.cui}>
+          <input id="cui" name="cui" inputMode="text" autoComplete="off" placeholder="Ex.: RO12345678" className={inputCls} {...err("cui")} />
+        </Field>
+        <div className="sm:col-span-2">
         <Field id="serviciu" label="Serviciul dorit" required error={errors.serviciu}>
           <select id="serviciu" name="serviciu" defaultValue={defaultService ?? ""} className={inputCls} {...err("serviciu")}>
             <option value="" disabled>
@@ -137,6 +141,7 @@ export default function QuoteForm({ defaultService }: { defaultService?: QuoteOp
             ))}
           </select>
         </Field>
+        </div>
         <div className="sm:col-span-2">
           <Field id="mesaj" label="Mesajul dumneavoastră" required error={errors.mesaj}>
             <textarea
