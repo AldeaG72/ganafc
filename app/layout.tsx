@@ -3,6 +3,7 @@ import { Inter, Playfair_Display } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { MotionProvider } from "@/components/Motion";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const sans = Inter({ subsets: ["latin", "latin-ext"], variable: "--font-sans" });
@@ -16,6 +17,21 @@ export const metadata: Metadata = {
   },
   description:
     "GANA F&A (Finance & Accounting) — servicii de contabilitate, consultanță fiscală, resurse umane și salarizare pentru firme din România.",
+  openGraph: {
+    type: "website",
+    locale: "ro_RO",
+    url: "https://ganaaccounting.ro",
+    siteName: "GANA F&A",
+    title: "GANA F&A — Contabilitate și consultanță fiscală",
+    description:
+      "Contabilitate, consultanță fiscală, resurse umane și salarizare pentru firme care vor să crească fără griji administrative.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "GANA F&A — Contabilitate și consultanță fiscală",
+    description:
+      "Contabilitate, consultanță fiscală, resurse umane și salarizare pentru firme care vor să crească fără griji administrative.",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -27,6 +43,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main className="overflow-x-clip">{children}</main>
           <Footer />
         </MotionProvider>
+        <Analytics />
       </body>
     </html>
   );

@@ -46,8 +46,13 @@ export default function Politica() {
         </li>
       </ul>
       <p>
-        Site-ul nu folosește cookie-uri de marketing sau de analiză și nu urmărește comportamentul vizitatorilor
-        în scop publicitar.
+        <strong>Statistici de vizitare:</strong> folosim Vercel Web Analytics pentru a afla câte persoane vizitează
+        site-ul, ce pagini sunt accesate și din ce țară sau de pe ce tip de dispozitiv. Serviciul nu folosește
+        cookie-uri, nu creează profiluri și nu permite identificarea vizitatorilor; datele sunt agregate și anonime.
+      </p>
+      <p>
+        Site-ul nu folosește cookie-uri de marketing și nu urmărește comportamentul vizitatorilor în scop
+        publicitar.
       </p>
 
       <h2>3. Scopurile și temeiul prelucrării</h2>
@@ -74,7 +79,7 @@ export default function Politica() {
         obligă să protejeze datele:
       </p>
       <ul>
-        <li>Vercel Inc. – găzduirea site-ului;</li>
+        <li>Vercel Inc. – găzduirea site-ului și statisticile anonime de vizitare;</li>
         <li>Resend – transmiterea emailurilor generate de formularul de ofertă;</li>
         <li>Google (Google Workspace) – serviciul de email al firmei.</li>
       </ul>
