@@ -39,4 +39,4 @@ export const legalBadges: { href: string; label: string; image?: string; width: 
   },
 ];
 
-export const ceccar = { href: "https://ceccar.ro/ro/", label: "CECCAR", image: undefined as string | undefined };
+export const ceccar = { href: "https://ceccar.ro/ro/", label: "CECCAR", image: "/legal/ceccar.png" as string | undefined };

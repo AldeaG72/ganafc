@@ -96,7 +96,7 @@ export default function Footer() {
           >
             {ceccar.image ? (
               // eslint-disable-next-line @next/next/no-img-element
-              <img src={ceccar.image} alt="CECCAR" className="h-[50px] w-auto" />
+              <img src={ceccar.image} alt="CECCAR – Corpul Experților Contabili și Contabililor Autorizați din România" width={221} height={240} className="h-20 w-auto drop-shadow-lg" />
             ) : (
               <span className="flex h-[50px] items-center rounded-md bg-white px-4 font-serif text-lg font-bold tracking-wider text-navy-900">
                 CECCAR
