@@ -8,6 +8,7 @@ const links = [
   { href: "/#acasa", label: "Acasă" },
   { href: "/#servicii", label: "Servicii" },
   { href: "/#despre", label: "Despre noi" },
+  { href: "/#echipa", label: "Echipa" },
   { href: "/#contact", label: "Contact" },
 ];
 
