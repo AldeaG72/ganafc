@@ -23,8 +23,8 @@ export default function Team() {
                   <Image
                     src={m.photo}
                     alt={`${m.name} – ${m.role}`}
-                    width={320}
-                    height={400}
+                    width={480}
+                    height={600}
                     sizes="(min-width: 1024px) 25vw, 50vw"
                     className="aspect-[4/5] w-full object-cover transition duration-700 group-hover:scale-[1.03]"
                   />
