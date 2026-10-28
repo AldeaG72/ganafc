@@ -78,7 +78,7 @@ export default function Footer() {
             >
               {b.image ? (
                 // eslint-disable-next-line @next/next/no-img-element
-                <img src={b.image} alt={b.label} width={b.width} height={b.height} className="h-[50px] w-auto" />
+                <img src={b.image} alt={`${b.label} – ANPC`} width={b.width} height={b.height} className="h-14 w-auto rounded-lg bg-white shadow-md shadow-black/20" />
               ) : (
                 <span className="flex h-[50px] w-[250px] items-center gap-3 rounded-md bg-white px-3 text-left text-navy-900">
                   <span className="font-serif text-lg font-bold text-navy-700">ANPC</span>

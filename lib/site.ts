@@ -26,14 +26,16 @@ export const legalBadges: { href: string; label: string; image?: string; width: 
   {
     href: "https://anpc.ro/",
     label: "Soluționarea alternativă a litigiilor",
-    width: 250,
-    height: 50,
+    image: "/legal/anpc-sal.png",
+    width: 515,
+    height: 131,
   },
   {
     href: "https://consumer-redress.ec.europa.eu/site-relocation_en",
     label: "Soluționarea online a litigiilor",
-    width: 250,
-    height: 50,
+    image: "/legal/anpc-sol.png",
+    width: 513,
+    height: 130,
   },
 ];
 
