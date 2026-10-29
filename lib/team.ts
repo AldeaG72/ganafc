@@ -27,7 +27,7 @@ export const team: TeamMember[] = [
   },
   {
     name: "Bianca Elena Armașu",
-    role: "Avocat | Consilier Juridic General",
+    role: "Avocat",
     photo: "/echipa/bianca-armasu-2.jpg",
     bio: [
       "Bianca este avocat în Baroul București din 2019 și coordonează partea juridică a echipei. Și‑a început cariera la una dintre cele mai mari case de avocatură din România. A condus apoi departamentele juridice ale unui grup de companii din industria muzicală și de entertainment, ca Head of Legal și Group General Counsel.",
