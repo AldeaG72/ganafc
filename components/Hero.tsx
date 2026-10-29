@@ -65,37 +65,27 @@ export default function Hero() {
 
       <div className="container-x relative grid items-center gap-12 py-20 sm:py-28 lg:grid-cols-[1.2fr_1fr]">
         <motion.div style={{ y: contentY, opacity: fade }}>
-          <motion.p
-            className="text-xs font-semibold uppercase tracking-[0.25em] text-gold-400"
-            initial={{ opacity: 0, letterSpacing: "0.6em" }}
-            animate={{ opacity: 1, letterSpacing: "0.25em" }}
-            transition={{ duration: 1.1, ease: EASE }}
-          >
-            Finance &amp; Accounting
-          </motion.p>
+          <h1 className="track-in text-xs font-semibold uppercase leading-relaxed tracking-[0.25em] text-gold-400">
+            Contabilitate și consultanță fiscală pentru firme
+          </h1>
 
-          <h1 className="mt-5 font-serif text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
+          <p className="mt-5 font-serif text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
             {lines.map((line) => (
               <span key={line.text} className={`block ${line.className}`}>
                 {line.text.split(" ").map((word) => {
                   const i = wordIndex++;
                   return (
                     <span key={word + i} className="inline-block overflow-hidden pb-1 align-bottom">
-                      <motion.span
-                        className="inline-block"
-                        initial={{ y: "110%", opacity: 0, rotate: 4 }}
-                        animate={{ y: "0%", opacity: 1, rotate: 0 }}
-                        transition={{ duration: 0.9, delay: 0.25 + i * 0.12, ease: EASE }}
-                      >
+                      <span className="word-rise" style={{ animationDelay: `${0.25 + i * 0.12}s` }}>
                         {word}
-                      </motion.span>
+                      </span>
                       {" "}
                     </span>
                   );
                 })}
               </span>
             ))}
-          </h1>
+          </p>
 
           {/* Linie aurie care se desenează sub titlu */}
           <motion.div
@@ -106,22 +96,12 @@ export default function Hero() {
             transition={{ duration: 1.2, delay: 0.9, ease: EASE }}
           />
 
-          <motion.p
-            className="mt-6 max-w-xl text-lg leading-relaxed text-white/75"
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 1, ease: EASE }}
-          >
+          <p className="fade-up mt-6 max-w-xl text-lg leading-relaxed text-white/75" style={{ animationDelay: "1s" }}>
             Contabilitate, consultanță fiscală, resurse umane și salarizare pentru firme care vor să crească
             fără griji administrative.
-          </motion.p>
+          </p>
 
-          <motion.div
-            className="mt-9 flex flex-col gap-3 sm:flex-row"
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 1.2, ease: EASE }}
-          >
+          <div className="fade-up mt-9 flex flex-col gap-3 sm:flex-row" style={{ animationDelay: "1.2s" }}>
             <Link href="/solicita-oferta" className="btn-gold btn-shine group">
               Solicită ofertă
               <Icon name="arrow" className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -129,7 +109,7 @@ export default function Hero() {
             <Link href="/#servicii" className="btn-outline">
               Serviciile noastre
             </Link>
-          </motion.div>
+          </div>
         </motion.div>
 
         <motion.div style={{ y: cardY }}>

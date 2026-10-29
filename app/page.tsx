@@ -24,7 +24,10 @@ const organization = {
   image: `${site.url}/opengraph-image.png`,
   telephone: site.phone.replace(/\s/g, ""),
   email: site.email,
-  areaServed: "RO",
+  areaServed: [
+    { "@type": "City", name: "București" },
+    { "@type": "Country", name: "România" },
+  ],
   employee: team.map((m) => ({ "@type": "Person", name: m.name, jobTitle: m.role.replace(" | ", ", ") })),
 };
 

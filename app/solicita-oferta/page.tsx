@@ -6,6 +6,7 @@ import { EmailLink, PhoneActions } from "@/components/ContactLinks";
 import { quoteOptions, services, type QuoteOption } from "@/lib/services";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/solicita-oferta" },
   title: "Solicită ofertă",
   description: "Solicită o ofertă personalizată pentru servicii de contabilitate, fiscalitate, HR și salarizare.",
 };

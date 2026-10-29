@@ -4,6 +4,7 @@ import LegalPage from "@/components/LegalPage";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/politica-confidentialitate" },
   title: "Politica de confidențialitate",
   description: "Cum prelucrează GANA F&A datele cu caracter personal, conform GDPR.",
 };

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s | GANA F&A",
   },
   description:
-    "GANA F&A (GANA Finance and Accounting) – servicii de contabilitate, consultanță fiscală, resurse umane și salarizare pentru firme din România. ganaaccounting.ro",
+    "GANA F&A (GANA Finance and Accounting) – servicii de contabilitate, consultanță fiscală, resurse umane și salarizare pentru firme din București și din toată România. ganaaccounting.ro",
   openGraph: {
     type: "website",
     locale: "ro_RO",

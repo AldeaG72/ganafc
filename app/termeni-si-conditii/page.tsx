@@ -4,6 +4,7 @@ import LegalPage from "@/components/LegalPage";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/termeni-si-conditii" },
   title: "Termeni și condiții",
   description: "Termenii și condițiile de utilizare a site-ului GANA F&A.",
 };
