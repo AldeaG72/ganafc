@@ -1,9 +1,11 @@
-// Date de contact demo — înlocuiți cu datele reale ale firmei.
+// CUI-ul, nr. Reg. Com. și adresa sediului se completează când sunt gata actele firmei.
+// Cât timp sunt goale, nu apar pe site, iar ca adresă se afișează doar orașul.
 const company = {
   name: "GANA Finance and Accounting SRL",
-  cui: "RO00000000",
-  regCom: "J40/0000/2020",
-  seat: "Str. Exemplu nr. 10, București",
+  cui: "",
+  regCom: "",
+  seat: "",
+  city: "București",
 };
 
 export const site = {
@@ -17,11 +19,11 @@ export const site = {
     "Bună ziua! Aș dori informații despre serviciile GANA F&A.",
   )}`,
   email: "office@ganaaccounting.ro",
-  address: company.seat,
+  address: company.seat || company.city,
   hours: "Luni – Vineri: 09:00 – 18:00",
   url: "https://ganaaccounting.ro",
   company,
-  legal: `${company.name} · CUI ${company.cui} · ${company.regCom}`,
+  legal: [company.name, company.cui && `CUI ${company.cui}`, company.regCom].filter(Boolean).join(" · "),
 };
 
 // Linkuri obligatorii în subsol. Când imaginile oficiale sunt adăugate în public/legal/,

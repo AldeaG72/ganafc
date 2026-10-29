@@ -21,8 +21,12 @@ export default function Termeni() {
 
       <h2>1. Cine suntem</h2>
       <ul>
-        <li>{c.name}, CUI {c.cui}, nr. Registrul Comerțului {c.regCom}</li>
-        <li>Sediu: {c.seat}</li>
+        <li>
+          {c.name}
+          {c.cui && `, CUI ${c.cui}`}
+          {c.regCom && `, nr. Registrul Comerțului ${c.regCom}`}
+        </li>
+        <li>Sediu: {site.address}</li>
         <li>
           Email: <a href={`mailto:${site.email}`}>{site.email}</a> · Telefon:{" "}
           <a href={site.phoneHref}>{site.phone}</a>

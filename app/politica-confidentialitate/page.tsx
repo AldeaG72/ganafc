@@ -22,8 +22,12 @@ export default function Politica() {
 
       <h2>1. Operatorul de date</h2>
       <ul>
-        <li>{c.name}, CUI {c.cui}, nr. Registrul Comerțului {c.regCom}</li>
-        <li>Sediu: {c.seat}</li>
+        <li>
+          {c.name}
+          {c.cui && `, CUI ${c.cui}`}
+          {c.regCom && `, nr. Registrul Comerțului ${c.regCom}`}
+        </li>
+        <li>Sediu: {site.address}</li>
         <li>
           Email: <a href={`mailto:${site.email}`}>{site.email}</a> · Telefon:{" "}
           <a href={site.phoneHref}>{site.phone}</a>
