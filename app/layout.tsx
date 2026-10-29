@@ -12,11 +12,11 @@ const serif = Playfair_Display({ subsets: ["latin", "latin-ext"], variable: "--f
 export const metadata: Metadata = {
   metadataBase: new URL("https://ganaaccounting.ro"),
   title: {
-    default: "GANA F&A — Contabilitate și consultanță fiscală",
+    default: "GANA F&A – GANA Finance and Accounting | Contabilitate și consultanță fiscală",
     template: "%s | GANA F&A",
   },
   description:
-    "GANA F&A (Finance & Accounting) — servicii de contabilitate, consultanță fiscală, resurse umane și salarizare pentru firme din România.",
+    "GANA F&A (GANA Finance and Accounting) – servicii de contabilitate, consultanță fiscală, resurse umane și salarizare pentru firme din România. ganaaccounting.ro",
   openGraph: {
     type: "website",
     locale: "ro_RO",
