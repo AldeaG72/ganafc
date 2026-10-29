@@ -25,7 +25,11 @@ export default function Services() {
                 <span className="grid h-12 w-12 place-items-center rounded-xl bg-navy-900 text-gold-400 transition duration-500 group-hover:rotate-[-8deg] group-hover:scale-110 group-hover:bg-gold-500 group-hover:text-navy-950">
                   <Icon name={s.icon} />
                 </span>
-                <h3 className="font-serif text-2xl font-semibold">{s.title}</h3>
+                <h3 className="font-serif text-2xl font-semibold">
+                  <Link href={`/servicii/${s.slug}`} className="hover:text-gold-600">
+                    {s.title}
+                  </Link>
+                </h3>
               </div>
               <p className="mt-4 text-navy-700/80">{s.description}</p>
               <ul className="mt-5 space-y-2 text-sm">
@@ -36,13 +40,18 @@ export default function Services() {
                   </li>
                 ))}
               </ul>
-              <Link
-                href={`/solicita-oferta?serviciu=${s.slug}`}
-                className="mt-auto inline-flex items-center gap-2 pt-6 text-sm font-semibold text-navy-900 hover:text-gold-600"
-              >
-                Cere ofertă pentru {s.title.split(" (")[0]}
-                <Icon name="arrow" className="h-4 w-4 transition group-hover:translate-x-1" />
-              </Link>
+              <div className="mt-auto flex flex-wrap items-center gap-x-6 gap-y-2 pt-6 text-sm font-semibold">
+                <Link
+                  href={`/servicii/${s.slug}`}
+                  className="inline-flex items-center gap-2 text-navy-900 hover:text-gold-600"
+                >
+                  Detalii despre {s.title.split(" (")[0].toLowerCase()}
+                  <Icon name="arrow" className="h-4 w-4 transition group-hover:translate-x-1" />
+                </Link>
+                <Link href={`/solicita-oferta?serviciu=${s.slug}`} className="text-gold-600 hover:text-navy-900">
+                  Cere ofertă
+                </Link>
+              </div>
               <span aria-hidden="true" className="absolute inset-x-0 bottom-0 h-1 origin-left scale-x-0 bg-gradient-to-r from-gold-500 to-gold-300 transition-transform duration-500 group-hover:scale-x-100" />
             </article>
             </StaggerItem>
