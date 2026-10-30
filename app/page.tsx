@@ -5,7 +5,7 @@ import WhyUs from "@/components/WhyUs";
 import About from "@/components/About";
 import Team from "@/components/Team";
 import Contact from "@/components/Contact";
-import { site } from "@/lib/site";
+import { site, social } from "@/lib/site";
 import { team } from "@/lib/team";
 
 export const metadata: Metadata = {
@@ -28,6 +28,7 @@ const organization = {
     { "@type": "City", name: "București" },
     { "@type": "Country", name: "România" },
   ],
+  sameAs: social.map((s) => s.href),
   employee: team.map((m) => ({ "@type": "Person", name: m.name, jobTitle: m.role.replace(" | ", ", ") })),
 };
 

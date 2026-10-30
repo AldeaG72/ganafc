@@ -26,6 +26,13 @@ export const site = {
   legal: [company.name, company.cui && `CUI ${company.cui}`, company.regCom].filter(Boolean).join(" · "),
 };
 
+// Profilurile firmei pe rețelele sociale (subsol și date structurate).
+export const social = [
+  { name: "Instagram", href: "https://www.instagram.com/ganaaccounting/" },
+  { name: "TikTok", href: "https://www.tiktok.com/@ganaaccounting" },
+  { name: "LinkedIn", href: "https://www.linkedin.com/company/gana-accounting/" },
+] as const;
+
 // Linkuri obligatorii în subsol. Când imaginile oficiale sunt adăugate în public/legal/,
 // completați câmpul `image` și link-ul se afișează ca pictogramă.
 export const legalBadges: { href: string; label: string; image?: string; width: number; height: number }[] = [
